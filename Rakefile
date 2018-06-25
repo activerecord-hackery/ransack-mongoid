@@ -1,10 +1,13 @@
 require "bundler/gem_tasks"
-require "rake/testtask"
+require 'rspec/core/rake_task'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << "test"
-  t.libs << "lib"
-  t.test_files = FileList["test/**/*_test.rb"]
+Bundler::GemHelper.install_tasks
+
+RSpec::Core::RakeTask.new(:mongoid) do |rspec|
+  ENV['SPEC'] = 'spec/mongoid/**/*_spec.rb'
+  rspec.rspec_opts = ['--backtrace']
 end
 
-task :default => :test
+task :default do
+  Rake::Task["mongoid"].invoke
+end

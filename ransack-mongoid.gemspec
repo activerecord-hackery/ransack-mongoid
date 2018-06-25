@@ -6,12 +6,12 @@ require "ransack/mongoid/version"
 Gem::Specification.new do |spec|
   spec.name          = "ransack-mongoid"
   spec.version       = Ransack::Mongoid::VERSION
-  spec.authors       = ["Greg Molnar"]
-  spec.email         = ["molnargerg@gmail.com"]
+  spec.authors     = ["Ernie Miller", "Ryan Bigg", "Jon Atack","Sean Carroll"]
+  spec.email       = ["ernie@erniemiller.org", "radarlistener@gmail.com", "jonnyatack@gmail.com","sfcarroll@gmail.com"]
+  spec.homepage    = "https://github.com/activerecord-hackery/ransack-mongoid"
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Object-based searching for Mongoid.}
+  spec.description   = %q{Ransack is the successor to the MetaSearch gem. It improves and expands upon MetaSearch's functionality, but does not have a 100%-compatible API. This is the gem with Mongoid support}
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,6 +30,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  # spec.add_dependency "ransack", "~> 1.8"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency 'rspec', '~> 3'
+  spec.add_development_dependency 'machinist', '~> 1.0.6'
+  spec.add_development_dependency 'faker', '~> 0.9.5'
+  spec.add_development_dependency 'pry', '0.10'
 end
