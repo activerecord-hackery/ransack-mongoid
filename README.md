@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Please refer to [Ransack's documentation](github.com/activerecord-hackery/ransack).
+Please refer to [Ransack's documentation](https://github.com/activerecord-hackery/ransack).
 
 
 ## License
