@@ -1,3 +1,5 @@
+NOT CURRENTLY MAINTAINED 
+
 # Ransack::Mongoid
 
 This gem contains the Mongoid support for Ransack.
