@@ -1,4 +1,12 @@
+# MAINTAINER WANTED
+
+This repo is looking for a maintainer. Please open an issue if you are interested.
+
+If there is no interested the repo will be archived.
+
 # Ransack::Mongoid
+
+
 
 This gem contains the Mongoid support for Ransack.
 
