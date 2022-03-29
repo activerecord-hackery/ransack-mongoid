@@ -1,8 +1,6 @@
-# MAINTAINER WANTED
+# Archived
 
-This repo is looking for a maintainer. Please open an issue if you are interested.
-
-If there is no interested the repo will be archived.
+The project is archived.
 
 # Ransack::Mongoid
 
