@@ -14,5 +14,13 @@ module Ransack
       end
     end
 
+    def visit_Ransack_Nodes_Sort(object)
+      if object.valid?
+        object.context.object.options[:sort] = {"#{object.name}": object.dir}
+      else
+        scope_name = :"sort_by_#{object.name}_#{object.dir}"
+        scope_name if object.context.object.respond_to?(scope_name)
+      end
+    end
   end
 end
